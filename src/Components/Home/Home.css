@@ -1,0 +1,130 @@
+.home{
+    height: 90vh;
+    width: 90vw;
+    max-width: 30rem;
+    margin: 1rem auto;
+    /* border: 2px solid yellow; */
+    /* border-radius: 2rem; */
+    /* background-color: #686D76; */
+    /* box-shadow: 3px 3px 31px 1px rgba(135,135,135,1); */
+    background-image: url("/assets/back3.jpg");
+    background-size: cover;
+    padding: 1rem 2rem;
+    opacity: 0.9;
+    overflow-y: auto;
+}
+
+.home h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.home .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.home .head .inpBox{
+    height: 2.5rem;
+    width: 100%;
+    max-width: 17rem;
+    background: transparent;
+    border: 1px solid white;
+    z-index: 999;
+    padding: 1rem;
+    outline: none;
+    color: white;
+}
+
+.home .head .inpBox::placeholder{
+    color: white;
+}
+
+.home .head .btn{
+    height: 2.5rem;
+    width: 100%;
+    max-width: 7rem;
+    background: transparent;
+    border: 1px solid white;
+    z-index: 999;
+    /* padding: 1rem; */
+    outline: none;
+    color: white;
+}
+
+.listItem{
+    /* height: 3rem; */
+    width: 100%;
+    border: 1px solid white;
+    list-style-type: none;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    font-size: 1.3rem;
+    letter-spacing: 0.02rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    /* opacity: 0.6; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.lineThrough{
+    text-decoration: black line-through;
+}
+
+.parentSpan{
+    width:85%
+}
+
+.spanTag{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .home h1{
+        font-size: 2rem;
+    }
+    .home .head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .btn{
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width:455px) {
+    .spanTag{
+        width: 20%;
+    }
+
+    .parentSpan{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:370px) {
+    .spanTag{
+        width: 25%;
+    }
+
+    .parentSpan{
+        width: 75%;
+    }
+
+    .listItem{
+        font-size: 1.1rem;
+    }
+}

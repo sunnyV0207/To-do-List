@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #2F2F2F; */
+    color: white;
+    background-image: url("/assets/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* body img{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+} */
